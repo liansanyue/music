@@ -260,7 +260,7 @@ color: #F9A13B;
     font-weight: bolder;
 
 }
-.music{
+.ellipsis{
 	display: inline-block;
 	width: 100px;
 	text-overflow: ellipsis;/*文字隐藏后添加省略号*/
@@ -268,10 +268,15 @@ color: #F9A13B;
     overflow: hidden;
     font-size: 12px;
     line-height: 30px;
+    /**/
+}
+.muscicname{
     color: #F9A13B;
     font-weight: bolder;
 }
-.music~span{
+.musicsinger{color: #666;
+}
+.ellipsis~span{
 	display: inline-block;
 	width: 70px;
 	padding-left: 20px;
