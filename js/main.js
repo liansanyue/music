@@ -18,8 +18,8 @@ for(var i=0;i<playimgs.length;i++){
 */
 //方式二
  
-
-var playimg=document.getElementById("imgplay").getElementsByTagName("img")[0];
+var imgplay=document.getElementById("imgplay");
+var playimg=imgplay.getElementsByTagName("img")[0];
 var prev=document.getElementById("prev");
 var next=document.getElementById("next");
 var list=document.getElementsByClassName("list");
@@ -58,4 +58,9 @@ function show(num){
 		}
 	}
 }
-setInterval(function(){var num= parseInt(Math.random()*7) ; change(num)},2000);
+var play=setInterval(function(){var num= parseInt(Math.random()*7) ; change(num)},2000);
+imgplay.onmouseover=function(){
+clearInterval(play);
+}
+imgplay.onmousrover=function(){
+play=setInterval(function(){var num=parseInt(Math.random()*7);change(num)},2000);
