@@ -84,3 +84,9 @@ imgplay.onmouseout = function() {
         nextimg();
     }, 2000);
 }
+<<<<<<< HEAD
+=======
+imgplay.onmousrover=function(){
+play=setInterval(function(){var num=parseInt(Math.random()*7);change(num)},2000);
+}
+>>>>>>> 3aa41c70f8dc6cee66ff530138e0eccac588cf1d
