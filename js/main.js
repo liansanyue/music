@@ -64,3 +64,4 @@ clearInterval(play);
 }
 imgplay.onmousrover=function(){
 play=setInterval(function(){var num=parseInt(Math.random()*7);change(num)},2000);
+}
