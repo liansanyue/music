@@ -4,6 +4,34 @@ var prev = document.getElementById("prev");
 var next = document.getElementById("next");
 var list = document.getElementsByClassName("list");
 var alist = document.getElementsByClassName("range");
+var imgas = document.getElementsByClassName("img");
+var img_is = document.getElementsByClassName("playicon");
+
+
+(function() {
+
+    for (var i = 0; i < imgas.length; i++) {
+        (function(i) {
+            imgas[i].onmouseover = function() {
+
+                img_is[i].style.display = "inline-block";
+                 img_is[i].style.color = "#F39F13";
+
+            }
+        })(i);
+        (function(i) {
+            imgas[i].onmouseout = function() {
+
+                img_is[i].style.display = "none";
+            }
+        })(i);
+    }
+
+
+})()
+
+
+
 var liveflag = 1,
     preflag = 0;
 
@@ -84,4 +112,3 @@ imgplay.onmouseout = function() {
         nextimg();
     }, 2000);
 }
-
